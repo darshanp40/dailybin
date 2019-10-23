@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: relative;
+            margin: 0;
+            font-size: 0;
+        }
+
+        .container {
+            width: 33%;
+            display: inline-block;
+            height: 200px;
+            background: rebeccapurple;
+            position: relative;
+        }
+
+        .exception {
+            background: red;
+            top: 100%;
+            left: 100%;
+            z-index: 11;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container"></div>
+        <div class="container exception"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+    </div>
+</body>
+
+</html>
